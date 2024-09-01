@@ -4,6 +4,7 @@ from captcha.image import ImageCaptcha
 from PIL import Image
 import string
 import random
+import time
 
 # Define the characters to generate captcha text
 alphabets = string.ascii_letters + string.digits
@@ -26,7 +27,15 @@ if 'captcha_text' not in st.session_state:
     st.session_state['captcha_text'] = generate_random_text()
 
 if 'captcha_image' not in st.session_state:
+    # Add a progress bar for captcha generation
+    progress_bar = st.progress(0)
+    st.write("Generating captcha image...")
+    # Simulate progress
+    for i in range(100):
+        time.sleep(0.01)  # Simulate some processing time
+        progress_bar.progress(i + 1)
     st.session_state['captcha_image'] = generate_captcha_image(st.session_state['captcha_text'])
+    progress_bar.empty()  # Remove progress bar after completion
 
 # Display title with emoji
 st.title("**CAPXAX 🤖**", help='Generate captcha image')
@@ -42,10 +51,18 @@ if st.button("**Submit**"):
     if captcha_input.strip().lower() == st.session_state['captcha_text'].lower():
         st.success("Captcha Verified!")
         new_captcha_text = generate_random_text()
+        # Add a progress bar for captcha generation
+        progress_bar = st.progress(0)
+        st.write("Generating new captcha image...")
+        # Simulate progress
+        for i in range(100):
+            time.sleep(0.01)  # Simulate some processing time
+            progress_bar.progress(i + 1)
         new_captcha_image = generate_captcha_image(new_captcha_text)
         st.session_state['captcha_text'] = new_captcha_text
         st.session_state['captcha_image'] = new_captcha_image
         captcha_image_placeholder.image(st.session_state['captcha_image'], use_column_width=True)
+        progress_bar.empty()  # Remove progress bar after completion
     else:
         st.warning("Incorrect Characters! Please try again.")
 
