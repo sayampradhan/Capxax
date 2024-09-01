@@ -48,3 +48,8 @@ if st.button("**Submit**"):
         captcha_image_placeholder.image(st.session_state['captcha_image'], use_column_width=True)
     else:
         st.warning("Incorrect Characters! Please try again.")
+
+footer_html = """<div style='text-align: center;'>
+  <p>Developed with ❤️ by Sayam</p>
+</div>"""
+st.markdown(footer_html, unsafe_allow_html=True)
