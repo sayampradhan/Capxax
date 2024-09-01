@@ -22,13 +22,10 @@ def generate_captcha_image(captcha_text):
     im = Image.open(buf)
     return im
 
-# Add custom CSS for progress bar color
+# Add custom CSS to change the progress bar color
 st.markdown("""
     <style>
-    .css-1d391kg {
-        background-color: #d3d3d3; /* Light gray background */
-    }
-    .css-1d391kg .css-1y4p8n4 {
+    .stProgress > div > div {
         background-color: #4CAF50; /* Green progress bar */
     }
     </style>
