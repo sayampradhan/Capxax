@@ -29,7 +29,7 @@ if 'captcha_image' not in st.session_state:
     st.session_state['captcha_image'] = generate_captcha_image(st.session_state['captcha_text'])
 
 # Display title with emoji
-st.title("**CAPXA 🤖**", help='Generate captcha image')
+st.title("**CAPXAX 🤖**", help='Generate captcha image')
 
 # Display captcha image
 captcha_image_placeholder = st.image(st.session_state['captcha_image'], use_column_width=True)
