@@ -22,6 +22,18 @@ def generate_captcha_image(captcha_text):
     im = Image.open(buf)
     return im
 
+# Add custom CSS for progress bar color
+st.markdown("""
+    <style>
+    .css-1d391kg {
+        background-color: #d3d3d3; /* Light gray background */
+    }
+    .css-1d391kg .css-1y4p8n4 {
+        background-color: #4CAF50; /* Green progress bar */
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 # Initialize session state for captcha text and image
 if 'captcha_text' not in st.session_state:
     st.session_state['captcha_text'] = generate_random_text()
