@@ -49,7 +49,7 @@ if 'captcha_image' not in st.session_state:
     progress_bar.empty()  # Remove progress bar after completion
 
 # Display title with emoji
-st.header("**Cap:red[XAX] :material/robot:**", help='Generate captcha image', divider="red")
+st.header("**Cap:red[XAX] :media/icons8-robot-48.png:**", help='Generate captcha image', divider="red")
 
 # Display captcha image
 captcha_image_placeholder = st.image(st.session_state['captcha_image'], use_column_width=True)
