@@ -6,6 +6,13 @@ import string
 import random
 import time
 
+st.logo(
+    "media/icons8-robot-96.png",
+    link="https://streamlit.io/gallery",
+    icon_image="icons8-robot-48.png",
+)
+
+
 # Define the characters to generate captcha text
 alphabets = string.ascii_letters + string.digits
 
