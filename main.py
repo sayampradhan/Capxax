@@ -77,7 +77,11 @@ if st.button("**Submit**"):
     else:
         st.warning("Incorrect Characters! Please try again.")
 
-footer_html = """<div style='text-align: center;'>
+footer_html = """
+<div style='text-align: center;'>
   <p>Developed with ❤️ by Sayam</p>
-</div>"""
+  <p><a href='https://github.com/sayampradhan/Capxax/tree/main' target='_blank'>View on GitHub</a></p>
+</div>
+"""
 st.markdown(footer_html, unsafe_allow_html=True)
+
