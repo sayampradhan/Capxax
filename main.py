@@ -7,16 +7,16 @@ import random
 import time
 
 st.logo(
-    "media/icons8-robot-60.png",
+    "media/icons8-robot-96.png",
     link="https://capxax.streamlit.app/",
-    icon_image="media/icons8-robot-60.png",
+    icon_image="media/icons8-robot-64.png",
 )
 
 import streamlit as st
 
 st.set_page_config(
     page_title="Capxax",
-    page_icon="media/icons8-robot-60.png",
+    page_icon="media/icons8-robot-64.png",
 )
 
 # Define the characters to generate captcha text
