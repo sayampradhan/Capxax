@@ -12,6 +12,12 @@ st.logo(
     icon_image="media/icons8-robot-96.png",
 )
 
+import streamlit as st
+
+st.set_page_config(
+    page_title="Ex-stream-ly Cool App",
+    page_icon="https://img.icons8.com/?size=100&id=nOtuLRvxfgru&format=png&color=000000",
+)
 
 # Define the characters to generate captcha text
 alphabets = string.ascii_letters + string.digits
