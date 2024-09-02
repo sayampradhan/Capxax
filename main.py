@@ -12,8 +12,6 @@ st.logo(
     icon_image="media/icons8-robot-48.png",
 )
 
-import streamlit as st
-
 st.set_page_config(
     page_title="Capxax",
     page_icon="media/icons8-robot-64.png",
@@ -42,7 +40,7 @@ if 'captcha_text' not in st.session_state:
 if 'captcha_image' not in st.session_state:
     # Add a progress bar for captcha generation
     progress_bar = st.progress(0)
-    st.write("Generating captcha image...")
+    # st.write("Generating captcha image...")
     # Simulate progress
     for i in range(100):
         time.sleep(0.01)  # Simulate some processing time
