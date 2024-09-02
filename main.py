@@ -9,7 +9,7 @@ import time
 st.logo(
     "media/icons8-robot-96.png",
     link="https://capxax.streamlit.app/",
-    icon_image="media/icons8-robot-64.png",
+    icon_image="media/icons8-robot-48.png",
 )
 
 import streamlit as st
