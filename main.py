@@ -7,9 +7,9 @@ import random
 import time
 
 st.logo(
-    "media/icons8-robot-96.png",
+    "media/icons8-robot-60.png",
     link="https://capxax.streamlit.app/",
-    icon_image="media/icons8-robot-96.png",
+    icon_image="media/icons8-robot-60.png",
 )
 
 import streamlit as st
