@@ -9,12 +9,12 @@ import time
 st.logo(
     "media/icons8-robot-64.png",
     link="https://capxax.streamlit.app/",
-    icon_image="media/icons8-robot-64.png",
+    icon_image="media/icons8-robot-100.png",
 )
 
 st.set_page_config(
     page_title="Capxax",
-    page_icon="media/icons8-robot-64.png",
+    page_icon="media/icons8-robot-100.png",
 )
 
 # Define the characters to generate captcha text
