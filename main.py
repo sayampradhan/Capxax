@@ -16,7 +16,7 @@ import streamlit as st
 
 st.set_page_config(
     page_title="Capxax",
-    page_icon="https://img.icons8.com/?size=100&id=nOtuLRvxfgru&format=png&color=000000",
+    page_icon="https://img.icons8.com/glyph-neue/64/bot.png",
 )
 
 # Define the characters to generate captcha text
