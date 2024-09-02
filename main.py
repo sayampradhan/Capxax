@@ -64,7 +64,7 @@ if st.button("**Submit**"):
         new_captcha_text = generate_random_text()
         # Add a progress bar for captcha generation
         progress_bar = st.progress(0)
-        st.write("Generating new captcha image...")
+        # st.write("Generating new captcha image...")
         # Simulate progress
         for i in range(100):
             time.sleep(0.01)  # Simulate some processing time
