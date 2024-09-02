@@ -14,7 +14,7 @@ st.logo(
 
 st.set_page_config(
     page_title="Capxax",
-    page_icon="media/icons8-robot-48.png",
+    page_icon="media/icons8-bot-48.png",
 )
 
 # Define the characters to generate captcha text
